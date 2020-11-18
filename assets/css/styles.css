@@ -1,0 +1,24 @@
+.headers{
+    text-align: center;
+    color:darkkhaki;
+}
+.content-card:hover{
+    box-shadow: grey 5px 5px 5px;
+}
+.content-card{
+    margin-bottom: 10px;
+}
+.address{
+    border: darkkhaki 5px solid;
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.head-office{
+    box-shadow: darkkhaki 10px 10px 10px;
+
+}
+.address:hover{
+    box-shadow: darkkhaki 10px 10px 10px;
+    border: darkkhaki 2px solid;
+}
