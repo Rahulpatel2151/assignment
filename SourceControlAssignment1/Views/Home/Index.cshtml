@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+@model SourceControlAssignment1.Models.Employee
+<h2>Registration</h2>
+@using (Html.BeginForm("RegistrationData","Home",FormMethod.Post, new { enctype="multipart/form-data"}))
+{
+<table class="table table-responsive ">
+    <tr class="form-group">
+        <td>@Html.LabelFor(x => x.firstName)</td>
+        <td>@Html.TextBoxFor(x => x.firstName, new { @class = "form-control" })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.firstName)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.lastName)</td>
+        <td>@Html.TextBoxFor(x => x.lastName, new { @class = "form-control" })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.lastName)</td>
+
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.mobileNo)</td>
+        <td>@Html.TextBoxFor(x => x.mobileNo, new { @class = "form-control" })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.mobileNo)</td>
+
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.email)</td>
+        <td>@Html.EditorFor(x => x.email, new { htmlattributes = new { @class = "form-control" } })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.email)</td>
+
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.address)</td>
+        <td>@Html.EditorFor(x => x.address, new { htmlattributes = new { @class = "form-control" } })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.address)</td>
+
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.age)</td>
+        <td>@Html.EditorFor(x => x.age, new { htmlattributes = new { @class = "form-control" } })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.age)</td>
+
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.birthDate)</td>
+        <td>@Html.EditorFor(x => x.birthDate, new { htmlattributes = new { @class = "form-control" } })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.birthDate)</td>
+
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(x => x.profilePhoto)</td>
+        <td>@Html.EditorFor(x => x.profilePhoto, new { htmlattributes = new { type="file", @class = "form-control" } })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.profilePhoto)</td>
+
+    </tr>
+    <tr>
+        <td><input type="submit" class="btn btn-primary" /></td>
+    </tr>
+</table>
+}
