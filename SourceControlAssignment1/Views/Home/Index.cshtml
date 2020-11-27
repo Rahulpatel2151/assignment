@@ -32,7 +32,7 @@
     </tr>
     <tr>
         <td>@Html.LabelFor(x => x.address)</td>
-        <td>@Html.EditorFor(x => x.address, new { htmlattributes = new { @class = "form-control" } })</td>
+        <td>@Html.TextAreaFor(x => x.address, new { @class = "form-control" })</td>
         <td style="color:red;">@Html.ValidationMessageFor(x => x.address)</td>
 
     </tr>
@@ -49,11 +49,12 @@
 
     </tr>
     <tr>
-        <td>@Html.LabelFor(x => x.profilePhoto)</td>
-        <td>@Html.EditorFor(x => x.profilePhoto, new { htmlattributes = new { type="file", @class = "form-control" } })</td>
-        <td style="color:red;">@Html.ValidationMessageFor(x => x.profilePhoto)</td>
+        <td>@Html.LabelFor(x => x.graduation)</td>
+        <td>@Html.EditorFor(x => x.graduation, new { htmlattributes = new { @class = "form-control" ,type="month"} })</td>
+        <td style="color:red;">@Html.ValidationMessageFor(x => x.graduation)</td>
 
     </tr>
+
     <tr>
         <td><input type="submit" class="btn btn-primary" /></td>
     </tr>

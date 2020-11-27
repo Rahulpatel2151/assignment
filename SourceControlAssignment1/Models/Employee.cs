@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-
+using SourceControlAssignment1.CustomValidation;
 namespace SourceControlAssignment1.Models
 {
     public class Employee
@@ -35,9 +35,10 @@ namespace SourceControlAssignment1.Models
         [DataType(DataType.Date)]
         [DisplayName("Birthdate")]
         public DateTime birthDate { get; set; }
-        [Required]
-        [DisplayName("Profile Photo")]
-        [FileExtensions(Extensions =".jpg .jpeg .png")]
-        public HttpPostedFileBase profilePhoto { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayName("Graduation Month and Year")]
+        [GraduationValidator(ErrorMessage = "Graduation must be 2020 or after 2020")]
+        public DateTime graduation { get; set; }
     }
 }
