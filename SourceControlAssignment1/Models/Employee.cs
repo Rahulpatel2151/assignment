@@ -17,7 +17,7 @@ namespace SourceControlAssignment1.Models
         public String lastName { get; set; }
         [Required]
         [DisplayName("Password")]
-        [RegularExpression("^(([a-z]|[A-Z]|[0-9]|[!@#$%*]){4,14})$",ErrorMessage = "Password must contain minimum 4 and maximum 14 characters and only contain !@#$%* special characters")]
+        [RegularExpression("^(([a-z]|[A-Z]|[0-9]|[!@#$%*]){4,12})$",ErrorMessage = "Password must contain minimum 4 and maximum 12 characters and only contain !@#$%* special characters")]
         public String password { get; set; }
 
         [Required]
