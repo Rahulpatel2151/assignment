@@ -26,7 +26,5 @@ namespace Source_Control_Final_Assignment
         }
     
         public virtual DbSet<Users> Users { get; set; }
-
-        public System.Data.Entity.DbSet<Source_Control_Final_Assignment.Models.MemberRegistration> MemberRegistrations { get; set; }
     }
 }

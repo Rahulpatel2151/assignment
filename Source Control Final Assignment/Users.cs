@@ -23,5 +23,7 @@ namespace Source_Control_Final_Assignment
         public string Designation { get; set; }
         public decimal Salary { get; set; }
         public int Age { get; set; }
+        public string profilephoto { get; set; }
+        public System.DateTime GraduationDate { get; set; }
     }
 }

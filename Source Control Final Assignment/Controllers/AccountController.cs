@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -21,9 +23,16 @@ namespace Source_Control_Final_Assignment.Controllers
             string name=User.Identity.Name;
             System.Console.WriteLine("Findding:"+name);
             var model=db.Users.Where(e => e.Username == name).ToList();
-
-            
-            return View(model[0]);
+            Users u;
+            try
+            {
+                u = model[0];
+                return View(model[0]);
+            }
+            catch
+            {
+                return RedirectToAction("Logout");
+            }
         }
         public ActionResult Login()
         {
@@ -61,24 +70,47 @@ namespace Source_Control_Final_Assignment.Controllers
         [HttpPost]
         public ActionResult SignUp(MemberRegistration m)
         {
-            Users u = new Users()
+            if (!ModelState.IsValid)
             {
-                Username = m.Username,
-                Password = HashSHA1(m.Password),
-                Email=m.Email,
-                MobileNo=m.MobileNo,
-                Fullname = m.Fullname,
-                Designation = m.Designation,
-                Salary = m.Salary,
-                Age = m.Age
-            };
-            using (var context = new SCFinalAssignmentEntities())
-            {
-                context.Users.Add(u);
-                context.SaveChanges();
-                return RedirectToAction("Login", "Account");
+                return View(m);
             }
-
+            bool isValid = db.Users.Any(x => x.Username == m.Username && x.Username != User.Identity.Name);
+            if (!isValid)
+            {
+                
+                string filepath = "/UploadedFiles/default.png";
+                if (m.profilephoto != null)
+                {
+                    
+                    string path = Path.Combine(Server.MapPath("~/UploadedFiles"), Path.GetFileName(m.profilephoto.FileName));
+                    filepath = "/UploadedFiles/" + Path.GetFileName(m.profilephoto.FileName);
+                    m.profilephoto.SaveAs(path);
+                }
+                Users u = new Users()
+                {
+                    Username = m.Username,
+                    Password = HashSHA1(m.Password),
+                    Email = m.Email,
+                    MobileNo = m.MobileNo,
+                    Fullname = m.Fullname,
+                    Designation = m.Designation,
+                    Salary = m.Salary,
+                    Age = m.Age,
+                    GraduationDate=m.GraduationDate,
+                    profilephoto = filepath
+                };
+                using (var context = new SCFinalAssignmentEntities())
+                {
+                    context.Users.Add(u);
+                    context.SaveChanges();
+                    return RedirectToAction("Login", "Account");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("Username", "Username already exists!!");
+                return View(m);
+            }
         }
         [Authorize]
         public ActionResult Edit(int? id)
@@ -88,7 +120,15 @@ namespace Source_Control_Final_Assignment.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var model = db.Users.Where(e => e.Username == User.Identity.Name).ToList();
-            Users u = model[0];
+            Users u;
+            try
+            {
+                 u = model[0];
+            }
+            catch
+            {
+                return RedirectToAction("Logout");
+            }
             if (u.Id != id)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
@@ -107,7 +147,8 @@ namespace Source_Control_Final_Assignment.Controllers
                 Fullname = u.Fullname,
                 Designation = u.Designation,
                 Salary = u.Salary,
-                Age = u.Age
+                Age = u.Age,
+                GraduationDate=u.GraduationDate
             };
             return View(m);
         }
@@ -117,27 +158,93 @@ namespace Source_Control_Final_Assignment.Controllers
         [Authorize]
         public ActionResult Edit(int id,MemberRegistration m)
         {
-            Users u = new Users()
+            ModelState["Password"].Errors.Clear();
+            if (!ModelState.IsValid)
             {
-                Id=m.Id,
-                Username = m.Username,
-                Password = HashSHA1(m.Password),
-                Email = m.Email,
-                MobileNo = m.MobileNo,
-                Fullname = m.Fullname,
-                Designation = m.Designation,
-                Salary = m.Salary,
-                Age = m.Age
-            };
-            ViewBag.execute = "Not Executed";
-
-            if (id==m.Id)
+                return View(m);
+            }
+            
+            bool isValid = db.Users.Any(x => x.Username == m.Username && x.Username != User.Identity.Name );
+            if (!isValid)
             {
-                ViewBag.execute = "Executed";
+                var model = db.Users.Where(e => e.Username == User.Identity.Name).ToList();
+                Users u = model[0];
+                if (m.profilephoto != null)
+                {
+                    
+                    string path = Path.Combine(Server.MapPath("~/UploadedFiles"), Path.GetFileName(m.profilephoto.FileName));
+                    string filepath = "/UploadedFiles/" + Path.GetFileName(m.profilephoto.FileName);
+                    m.profilephoto.SaveAs(path);
+                    u.profilephoto = filepath;
+                }
+                u.Id = m.Id;
+                u.Username = m.Username;
+                u.Email = m.Email;
+                u.MobileNo = m.MobileNo;
+                u.Fullname = m.Fullname;
+                u.Designation = m.Designation;
+                u.Salary = m.Salary;
+                u.Age = m.Age;
+                u.GraduationDate = m.GraduationDate;
+                if (id == m.Id)
+                {
+                    db.Entry(u).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+                return RedirectToAction("Logout");
+            }
+            else
+            {
+                ModelState.AddModelError("Username", "Username already exists!!");
+                return View(m);
+            }
+        }
+        public ActionResult ChangePassword(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var model = db.Users.Where(e => e.Username == User.Identity.Name).ToList();
+            Users u = model[0];
+            if (u.Id != id)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
+            }
+            if (u == null)
+            {
+                return HttpNotFound();
+            }
+            return View(new ChangePassword());
+        }
+        [HttpPost]
+        public ActionResult ChangePassword(int? id,ChangePassword c)
+        {
+            if (c == null)
+            {
+                return HttpNotFound();
+            }
+            string arrived = HashSHA1(c.currentPassword);
+            bool isValid = db.Users.Any(x => x.Username == User.Identity.Name&& x.Password == arrived);
+            if (isValid)
+            {
+                var model = db.Users.Where(e => e.Username == User.Identity.Name).ToList();
+                Users u = model[0];
+                if (u.Id != id)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
+                }
+                u.Password = HashSHA1(c.NewPassword);
                 db.Entry(u).State = EntityState.Modified;
                 db.SaveChanges();
+                return View("Index", u);
             }
-            return View("Index",u);
+            else
+            {
+                ModelState.AddModelError("currentPassword", "Password not match with the records");
+                return View(c);
+            }
+
         }
         public ActionResult Logout()
         {

@@ -10,6 +10,14 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.profilephoto)
+        </dt>
+
+        <dd>
+            <img src=@Html.DisplayFor(model => model.profilephoto) alt="Profile Photo Not Available" style="height:200px;width:200px">
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Username)
         </dt>
 
@@ -17,7 +25,7 @@
             @Html.DisplayFor(model => model.Username)
         </dd>
 
-        
+
         <dt>
             @Html.DisplayNameFor(model => model.Email)
         </dt>
@@ -65,9 +73,16 @@
         <dd>
             @Html.DisplayFor(model => model.Age)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GraduationDate)
+        </dt>
 
+        <dd>
+            @Html.DisplayFor(model => model.GraduationDate)
+        </dd>
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) 
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |     @Html.ActionLink("Change Password", "ChangePassword", new { id = Model.Id })
+
 </p>
