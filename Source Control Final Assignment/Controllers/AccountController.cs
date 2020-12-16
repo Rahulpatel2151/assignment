@@ -11,17 +11,18 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using Source_Control_Final_Assignment.Models;
+using log4net;
 namespace Source_Control_Final_Assignment.Controllers
 {
     public class AccountController : Controller
     {
+        private static readonly ILog Log = LogManager.GetLogger(typeof(AccountController));
         // GET: Users
         private SCFinalAssignmentEntities db = new SCFinalAssignmentEntities();
         [Authorize]
         public ActionResult Index()
         {
             string name=User.Identity.Name;
-            System.Console.WriteLine("Findding:"+name);
             var model=db.Users.Where(e => e.Username == name).ToList();
             Users u;
             try
@@ -29,8 +30,9 @@ namespace Source_Control_Final_Assignment.Controllers
                 u = model[0];
                 return View(model[0]);
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error("Invalid Credentials",e);
                 return RedirectToAction("Logout");
             }
         }
@@ -48,15 +50,25 @@ namespace Source_Control_Final_Assignment.Controllers
             using (var context = new SCFinalAssignmentEntities())
             {
                 string hashedPassword = HashSHA1(m.password);
-                bool isValid = context.Users.Any(x => x.Username == m.username && x.Password == hashedPassword );
-                if (isValid)
+                try
                 {
-                    FormsAuthentication.SetAuthCookie(m.username, false);  
-                    return RedirectToAction("Index","Account");
+                    bool isValid = context.Users.Any(x => x.Username == m.username && x.Password == hashedPassword);
+                    if (isValid)
+                    {
+                        FormsAuthentication.SetAuthCookie(m.username, false);
+                        return RedirectToAction("Index", "Account");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid Username or Password");
+                        return View();
+                    }
                 }
-                ModelState.AddModelError("", "Invalid Username or Password");
+                catch(Exception e)
+                {
+                    Log.Debug("Login Failed", e);
+                }
             }
-                return View();
         }
 
         public ActionResult SignUp()
@@ -81,10 +93,16 @@ namespace Source_Control_Final_Assignment.Controllers
                 string filepath = "/UploadedFiles/default.png";
                 if (m.profilephoto != null)
                 {
-                    
-                    string path = Path.Combine(Server.MapPath("~/UploadedFiles"), Path.GetFileName(m.profilephoto.FileName));
-                    filepath = "/UploadedFiles/" + Path.GetFileName(m.profilephoto.FileName);
-                    m.profilephoto.SaveAs(path);
+                    try
+                    {
+                        string path = Path.Combine(Server.MapPath("~/UploadedFiles"), Path.GetFileName(m.profilephoto.FileName));
+                        filepath = "/UploadedFiles/" + Path.GetFileName(m.profilephoto.FileName);
+                        m.profilephoto.SaveAs(path);
+                    }
+                    catch(Exception e)
+                    {
+                        Log.Debug("Profile photo not saved", e);
+                    }
                 }
                 Users u = new Users()
                 {
@@ -103,6 +121,7 @@ namespace Source_Control_Final_Assignment.Controllers
                 {
                     context.Users.Add(u);
                     context.SaveChanges();
+                    Log.Info("New User Registered");
                     return RedirectToAction("Login", "Account");
                 }
             }
@@ -131,10 +150,12 @@ namespace Source_Control_Final_Assignment.Controllers
             }
             if (u.Id != id)
             {
+                Log.Warn("Attempted unauthorized request");
                 return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
             }
             if (u== null)
             {
+                Log.Info("Http not found request");
                 return HttpNotFound();
             }
             MemberRegistration m = new MemberRegistration()
@@ -161,6 +182,7 @@ namespace Source_Control_Final_Assignment.Controllers
             ModelState["Password"].Errors.Clear();
             if (!ModelState.IsValid)
             {
+                Log.Warn("Model Invalid");
                 return View(m);
             }
             
@@ -203,16 +225,19 @@ namespace Source_Control_Final_Assignment.Controllers
         {
             if (id == null)
             {
+                Log.Debug("Bad Request");
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var model = db.Users.Where(e => e.Username == User.Identity.Name).ToList();
             Users u = model[0];
             if (u.Id != id)
             {
+                Log.Warn("Attempted unauthorized request");
                 return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
             }
             if (u == null)
             {
+                Log.Info("Http not Found Request");
                 return HttpNotFound();
             }
             return View(new ChangePassword());
@@ -232,6 +257,7 @@ namespace Source_Control_Final_Assignment.Controllers
                 Users u = model[0];
                 if (u.Id != id)
                 {
+                    Log.Warn("Attempted unauthorized request");
                     return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
                 }
                 u.Password = HashSHA1(c.NewPassword);

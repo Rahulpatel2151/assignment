@@ -81,3 +81,5 @@ D:\Gateway Assignments\Source Control Final Assignment\obj\Debug\Source Control 
 D:\Gateway Assignments\Source Control Final Assignment\obj\Debug\Source Control Final Assignment.dll
 D:\Gateway Assignments\Source Control Final Assignment\obj\Debug\Source Control Final Assignment.pdb
 D:\Gateway Assignments\Source Control Final Assignment\obj\Debug\Source Control Final Assignment.csprojAssemblyReference.cache
+D:\Gateway Assignments\Source Control Final Assignment\bin\log4net.dll
+D:\Gateway Assignments\Source Control Final Assignment\bin\log4net.xml
