@@ -68,6 +68,7 @@ namespace Source_Control_Final_Assignment.Controllers
                 {
                     Log.Debug("Login Failed", e);
                 }
+                return View();
             }
         }
 
