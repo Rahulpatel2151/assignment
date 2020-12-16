@@ -11,7 +11,9 @@ namespace Source_Control_Final_Assignment.Models
     public class Members
     {
         public int Id { get; set; }
+        [Required]
         public string username { get; set; }
+        [Required]
         public string password { get; set; }
     }
     public class MemberRegistration
@@ -51,6 +53,7 @@ namespace Source_Control_Final_Assignment.Models
         public HttpPostedFileBase profilephoto { get; set; }
         [Required]
         [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [GraduationValidator(ErrorMessage ="Graduation must be after 1-1-2020")]
         public DateTime GraduationDate { get; set; }
     }
