@@ -26,5 +26,6 @@ namespace Source_Control_Final_Assignment
         }
     
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<logging> logging { get; set; }
     }
 }
