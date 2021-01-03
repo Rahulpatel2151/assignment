@@ -1,0 +1,44 @@
+﻿/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+
+
+#main {
+    transition: margin-left .5s;
+    margin-left: 15%;
+    padding: 20px;
+    width:auto;
+}
+
+@media (max-width: 450px) {
+    .sidenav {
+        width: 25%;
+    }
+
+    #main {
+        margin-left: 25%;
+    }
+}

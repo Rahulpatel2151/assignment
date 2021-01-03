@@ -1,0 +1,138 @@
+﻿@model PagedList.IPagedList<PreJoiningFinalAssignment.Products>
+
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Products</h2>
+@if (ViewBag.isPositive)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.PositiveStatus
+    </div>
+}
+@if (ViewBag.isNegative)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.NegativeStatus
+    </div>
+}
+@{
+    SelectListItem[] SortList = new SelectListItem[]
+    {
+        new SelectListItem { Value = "select", Text = "-select-" },
+        new SelectListItem { Value = "Name-ascending", Text = "Name-ascending" },
+        new SelectListItem { Value = "Name-descending", Text = "Name-descending" },
+        new SelectListItem { Value = "Category-ascending", Text = "Category-ascending" },
+        new SelectListItem { Value = "Category-descending", Text = "Category-descending" },
+        new SelectListItem { Value = "Price-ascending", Text = "Price-ascending" },
+        new SelectListItem { Value = "Price-descending", Text = "Price-descending" },
+                                                            };
+}
+@using (Html.BeginForm())
+{
+    <div class="form-inline">
+        <label for="sort">Search</label>
+        @Html.TextBox("search", null, new { @class = "form-control", @placeholder = "Search" })
+        <input type="submit" value="Search" class="btn btn-default" />
+    </div>
+}
+<br />
+@using (Html.BeginForm())
+{
+    <div class="form-inline">
+        <label for="sort">Sort By</label>
+        @Html.DropDownList("sort_order", SortList, new { @class = "btn btn-default" })
+        <input type="submit" value="Sort" class="btn btn-default" />
+
+    </div>
+}
+<br />
+@using (Html.BeginForm("DeleteMultiple", "Product"))
+{
+    <table class="table">
+        <tr>
+            <th>
+                <input type="checkbox" id="checkall" />
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ShortDescription)
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <input type="checkbox" class="delete" name="del" value="@item.Id" />
+                </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem => item.SmallImage)" style="height:100px;width:150px;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortDescription)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+
+    </table>
+    <input type="submit" value="Delete" id="deletebutton" class="btn btn-danger" />
+}
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, Page_No => Url.Action("Index", new { Page_No }))
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#checkall").click(function () {
+                if (this.checked) {
+                    $(".delete").each(function () {
+                        this.checked = true;
+                    });
+                } else {
+                    $(".delete").each(function () {
+                        this.checked = false;
+                    });
+                }
+                $('#deletebutton').prop('disabled', !boxes.filter(':checked').length);
+
+            });
+            var boxes = $('.delete');
+
+            boxes.on('change', function () {
+                $('#deletebutton').prop('disabled', !boxes.filter(':checked').length);
+            }).trigger('change');
+        });
+    </script>
+}
