@@ -1,0 +1,16 @@
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.DAL.dll.config
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.DAL.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.DAL.pdb
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\EntityFramework.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\EntityFramework.xml
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\obj\Debug\HMS.DAL.csprojAssemblyReference.cache
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\obj\Debug\HMS.DAL.csproj.CoreCompileInputs.cache
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\obj\Debug\HMS.DAL.csproj.CopyComplete
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\obj\Debug\HMS.DAL.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\obj\Debug\HMS.DAL.pdb
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.Models.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.Models.pdb
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\AutoMapper.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\AutoMapper.xml

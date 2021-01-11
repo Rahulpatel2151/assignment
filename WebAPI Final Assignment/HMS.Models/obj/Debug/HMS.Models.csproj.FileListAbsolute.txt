@@ -1,0 +1,6 @@
+D:\WebAPI\WebAPIFinalAssignment\HMS.Models\bin\Debug\HMS.Models.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.Models\bin\Debug\HMS.Models.pdb
+D:\WebAPI\WebAPIFinalAssignment\HMS.Models\obj\Debug\HMS.Models.csproj.CoreCompileInputs.cache
+D:\WebAPI\WebAPIFinalAssignment\HMS.Models\obj\Debug\HMS.Models.dll
+D:\WebAPI\WebAPIFinalAssignment\HMS.Models\obj\Debug\HMS.Models.pdb
+D:\WebAPI\WebAPIFinalAssignment\HMS.Models\obj\Debug\HMS.Models.csprojAssemblyReference.cache
