@@ -1,0 +1,64 @@
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\appsettings.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\ocelot.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.exe
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.deps.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.runtimeconfig.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.runtimeconfig.dev.json
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.pdb
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csprojAssemblyReference.cache
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.AssemblyInfoInputs.cache
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.AssemblyInfo.cs
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.RazorTargetAssemblyInfo.cache
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\staticwebassets\APIGateway.StaticWebAssets.Manifest.cache
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\staticwebassets\APIGateway.StaticWebAssets.xml
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.pdb
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.genruntimeconfig.cache
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Ocelot.dll
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csproj.CopyComplete
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csproj.CoreCompileInputs.cache
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\WebAPI\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\ocelot.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.exe
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.deps.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.runtimeconfig.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.runtimeconfig.dev.json
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.pdb
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\bin\Debug\netcoreapp3.1\Ocelot.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csprojAssemblyReference.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.AssemblyInfoInputs.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.AssemblyInfo.cs
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csproj.CoreCompileInputs.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.RazorTargetAssemblyInfo.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csproj.CopyComplete
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\staticwebassets\APIGateway.StaticWebAssets.Manifest.cache
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\staticwebassets\APIGateway.StaticWebAssets.xml
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.dll
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.pdb
+D:\Gateway Assignments\MicroservicesAssignment3\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.genruntimeconfig.cache

@@ -1,0 +1,132 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/api/books",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44384"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/books",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/books/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44384"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/books/{id}",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/members",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44322"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/members",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/members/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44322"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/members/{id}",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/transactions",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44361"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/transactions",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/transactions/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44361"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/transactions/{id}",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/fines",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44361"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/fines",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/fines/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44361"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/fines/{id}",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        },
+        {
+            "DownstreamPathTemplate": "/api/fines/member/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostandPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "44361"
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/fines/member/{id}",
+            "UpstreamHttpMethod": [ "GET" ]
+
+        }
+
+    ]
+}
