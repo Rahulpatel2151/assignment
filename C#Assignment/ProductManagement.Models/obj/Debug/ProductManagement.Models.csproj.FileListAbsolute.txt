@@ -1,0 +1,5 @@
+D:\C#Assignment\ProductManagement.Models\bin\Debug\ProductManagement.Models.dll
+D:\C#Assignment\ProductManagement.Models\bin\Debug\ProductManagement.Models.pdb
+D:\C#Assignment\ProductManagement.Models\obj\Debug\ProductManagement.Models.csproj.CoreCompileInputs.cache
+D:\C#Assignment\ProductManagement.Models\obj\Debug\ProductManagement.Models.dll
+D:\C#Assignment\ProductManagement.Models\obj\Debug\ProductManagement.Models.pdb

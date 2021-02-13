@@ -1,0 +1,16 @@
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\ProductManagement.DAL.dll.config
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\ProductManagement.DAL.dll
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\ProductManagement.DAL.pdb
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\EntityFramework.dll
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\EntityFramework.xml
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#Assignment\ProductManagement.DAL\obj\Debug\ProductManagement.DAL.csprojAssemblyReference.cache
+D:\C#Assignment\ProductManagement.DAL\obj\Debug\ProductManagement.DAL.csproj.CoreCompileInputs.cache
+D:\C#Assignment\ProductManagement.DAL\obj\Debug\ProductManagement.DAL.csproj.CopyComplete
+D:\C#Assignment\ProductManagement.DAL\obj\Debug\ProductManagement.DAL.dll
+D:\C#Assignment\ProductManagement.DAL\obj\Debug\ProductManagement.DAL.pdb
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\AutoMapper.dll
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\ProductManagement.Models.dll
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\ProductManagement.Models.pdb
+D:\C#Assignment\ProductManagement.DAL\bin\Debug\AutoMapper.xml
