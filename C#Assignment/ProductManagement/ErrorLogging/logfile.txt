@@ -1,0 +1,1 @@
+2021-02-13 16:58:27,681 [7] INFO  ProductManagement.Controllers.ProductController [(null)] - OK

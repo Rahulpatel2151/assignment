@@ -1,0 +1,29 @@
+2021-01-04 01:57:26,915 [13] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:08:17,260 [6] WARN  PreJoiningFinalAssignment.Controllers.AccountController [(null)] - Attempted unauthorized request
+2021-01-04 02:09:59,699 [6] DEBUG PreJoiningFinalAssignment.Controllers.AccountController [(null)] - Bad Request
+2021-01-04 02:11:39,132 [17] WARN  PreJoiningFinalAssignment.Controllers.AccountController [(null)] - Attempted unauthorized request
+2021-01-04 02:13:54,766 [6] DEBUG PreJoiningFinalAssignment.Controllers.AccountController [(null)] - Bad Request
+2021-01-04 02:16:29,647 [7] DEBUG PreJoiningFinalAssignment.Controllers.AccountController [(null)] - Bad Request
+2021-01-04 02:22:16,510 [9] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:23:09,772 [9] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - Created
+2021-01-04 02:23:09,796 [14] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:23:20,504 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:23:24,362 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:23:29,796 [9] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:25:37,382 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:25:44,590 [14] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:25:57,675 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:27:17,656 [15] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:27:23,692 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:32:29,038 [20] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:32:35,849 [21] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:33:23,351 [21] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:34:02,196 [21] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:35:24,694 [21] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:35:30,505 [43] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:46:31,663 [8] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:46:38,319 [8] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:46:42,753 [11] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:46:49,591 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:47:18,273 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
+2021-01-04 02:47:27,318 [6] INFO  PreJoiningFinalAssignment.Controllers.ProductController [(null)] - OK
