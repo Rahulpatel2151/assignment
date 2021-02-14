@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2> Go to Customer Dashboard</h2>
+       
+        <p>@Html.ActionLink("Click Here", "Index", "Account")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Go to Dealer Dashboard</h2>
+        
+        <p>@Html.ActionLink("Click Here", "Index", "Dealer")</p>
+    </div>
+
+</div>

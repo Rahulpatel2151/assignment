@@ -1,0 +1,65 @@
+﻿@model DealerManagement.Models.BookingView
+
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+
+    ViewBag.Title = "BookingDetails";
+}
+
+<h2>BookingDetails</h2>
+
+<div>
+    <h4>BookingView</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            User Email
+        </dt>
+
+        <dd>
+            @ViewBag.UserEmail
+        </dd>
+        <dt>
+            Vehicle No
+        </dt>
+
+        <dd>
+            @ViewBag.LicensePlate
+        </dd>
+        <dt>
+            Service Type
+        </dt>
+
+        <dd>
+            @ViewBag.ServiceName
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Change Status", "ChangeStatus", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Bookings")
+</p>

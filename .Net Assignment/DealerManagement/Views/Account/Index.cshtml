@@ -1,0 +1,9 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome @ViewBag.Name</h2>
+
+@Html.ActionLink("Edit Profile", "Edit", new { id = ViewBag.Id }) | @Html.ActionLink("ChangePassword", "ChangePassword", new { id = ViewBag.Id })

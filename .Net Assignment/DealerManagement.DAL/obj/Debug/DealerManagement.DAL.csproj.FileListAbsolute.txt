@@ -1,0 +1,16 @@
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\DealerManagement.DAL.dll.config
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\DealerManagement.DAL.dll
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\DealerManagement.DAL.pdb
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\AutoMapper.dll
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\DealerManagement.Models.dll
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\EntityFramework.dll
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\DealerManagement.Models.pdb
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\AutoMapper.xml
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\EntityFramework.xml
+D:\ASP.NET Projects\DealerManagement.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET Projects\DealerManagement.DAL\obj\Debug\DealerManagement.DAL.csprojAssemblyReference.cache
+D:\ASP.NET Projects\DealerManagement.DAL\obj\Debug\DealerManagement.DAL.csproj.CoreCompileInputs.cache
+D:\ASP.NET Projects\DealerManagement.DAL\obj\Debug\DealerManagement.DAL.csproj.CopyComplete
+D:\ASP.NET Projects\DealerManagement.DAL\obj\Debug\DealerManagement.DAL.dll
+D:\ASP.NET Projects\DealerManagement.DAL\obj\Debug\DealerManagement.DAL.pdb

@@ -1,0 +1,6 @@
+D:\ASP.NET Projects\DealerManagement.Models\bin\Debug\DealerManagement.Models.dll
+D:\ASP.NET Projects\DealerManagement.Models\bin\Debug\DealerManagement.Models.pdb
+D:\ASP.NET Projects\DealerManagement.Models\obj\Debug\DealerManagement.Models.csproj.CoreCompileInputs.cache
+D:\ASP.NET Projects\DealerManagement.Models\obj\Debug\DealerManagement.Models.dll
+D:\ASP.NET Projects\DealerManagement.Models\obj\Debug\DealerManagement.Models.pdb
+D:\ASP.NET Projects\DealerManagement.Models\obj\Debug\DealerManagement.Models.csprojAssemblyReference.cache
