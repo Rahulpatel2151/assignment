@@ -1,0 +1,7 @@
+D:\ASP.NET Projects\StringExtension\bin\Debug\StringExtension.exe.config
+D:\ASP.NET Projects\StringExtension\bin\Debug\StringExtension.exe
+D:\ASP.NET Projects\StringExtension\bin\Debug\StringExtension.pdb
+D:\ASP.NET Projects\StringExtension\obj\Debug\StringExtension.csprojAssemblyReference.cache
+D:\ASP.NET Projects\StringExtension\obj\Debug\StringExtension.csproj.CoreCompileInputs.cache
+D:\ASP.NET Projects\StringExtension\obj\Debug\StringExtension.exe
+D:\ASP.NET Projects\StringExtension\obj\Debug\StringExtension.pdb

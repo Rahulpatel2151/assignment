@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Tests\\PassengerManagement.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj",
+        "projectName": "PassengerManagement.Data",
+        "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj": {
+                "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj",
+        "projectName": "PassengerManagement.Models",
+        "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Tests\\PassengerManagement.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Tests\\PassengerManagement.Tests.csproj",
+        "projectName": "PassengerManagement.Tests",
+        "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Tests\\PassengerManagement.Tests.csproj",
+        "packagesPath": "C:\\Users\\Rahul\\.nuget\\packages\\",
+        "outputPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Rahul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj": {
+                "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj"
+              },
+              "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj": {
+                "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj"
+              },
+              "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement\\PassengerManagement.csproj": {
+                "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement\\PassengerManagement.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement\\PassengerManagement.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement\\PassengerManagement.csproj",
+        "projectName": "PassengerManagement",
+        "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement\\PassengerManagement.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj": {
+                "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Data\\PassengerManagement.Data.csproj"
+              },
+              "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj": {
+                "projectPath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Models\\PassengerManagement.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

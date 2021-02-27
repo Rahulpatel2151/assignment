@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "XhSIbo/FbMF5LHT9FYkR7BHuOFvo9tpoCPVzN1imaKIgV3pdWpyqPoYYlwX+VkroYKp0m+4nGS8cl7f1gNtqjQ==",
+  "success": true,
+  "projectFilePath": "D:\\Gateway Assignments\\TestingAssigment1\\PassengerManagement.Tests\\PassengerManagement.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rahul\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\coverlet.collector\\1.0.1\\coverlet.collector.1.0.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.codecoverage\\16.2.0\\microsoft.codecoverage.16.2.0.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.net.test.sdk\\16.2.0\\microsoft.net.test.sdk.16.2.0.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\moq\\4.16.1\\moq.4.16.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit\\2.4.1\\xunit.2.4.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.analyzers\\0.10.0\\xunit.analyzers.0.10.0.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.assert\\2.4.1\\xunit.assert.2.4.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.2\\xunit.runner.visualstudio.2.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

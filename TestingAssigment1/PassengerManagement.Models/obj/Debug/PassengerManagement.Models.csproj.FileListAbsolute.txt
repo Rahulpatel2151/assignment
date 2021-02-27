@@ -1,0 +1,5 @@
+D:\WebAPI\TestingAssigment1\PassengerManagement.Models\bin\Debug\PassengerManagement.Models.dll
+D:\WebAPI\TestingAssigment1\PassengerManagement.Models\bin\Debug\PassengerManagement.Models.pdb
+D:\WebAPI\TestingAssigment1\PassengerManagement.Models\obj\Debug\PassengerManagement.Models.csproj.CoreCompileInputs.cache
+D:\WebAPI\TestingAssigment1\PassengerManagement.Models\obj\Debug\PassengerManagement.Models.dll
+D:\WebAPI\TestingAssigment1\PassengerManagement.Models\obj\Debug\PassengerManagement.Models.pdb

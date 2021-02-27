@@ -1,0 +1,9 @@
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\bin\Debug\PassengerManagement.Data.dll
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\bin\Debug\PassengerManagement.Data.pdb
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\bin\Debug\PassengerManagement.Models.dll
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\bin\Debug\PassengerManagement.Models.pdb
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\obj\Debug\PassengerManagement.Data.csprojAssemblyReference.cache
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\obj\Debug\PassengerManagement.Data.csproj.CoreCompileInputs.cache
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\obj\Debug\PassengerManagement.Data.csproj.CopyComplete
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\obj\Debug\PassengerManagement.Data.dll
+D:\WebAPI\TestingAssigment1\PassengerManagement.Data\obj\Debug\PassengerManagement.Data.pdb
