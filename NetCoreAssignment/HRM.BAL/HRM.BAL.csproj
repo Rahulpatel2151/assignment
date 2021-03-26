@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.DAL\HRM.DAL.csproj" />
+    <ProjectReference Include="..\HRM.Models\HRM.Models.csproj" />
+  </ItemGroup>
+
+</Project>
