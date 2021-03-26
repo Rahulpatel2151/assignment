@@ -1,0 +1,154 @@
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Company Management</a>
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+    <!-- Navbar Search-->
+
+
+  </nav>
+  <div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+                  <a class="nav-link" [routerLink]="['/company/list']">
+                    <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                    All Companies
+                </a>
+                <a class="nav-link" [routerLink]="['/company/add']">
+                  <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
+                  Add Company
+              </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h1 class="mt-4">Edit Company Details</h1>
+
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-building mr-1"></i>
+                        Enter Company Details
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="companyForm"   (ngSubmit)="OnSubmit()" >
+                            <div  style="margin-bottom: 20px;">
+
+                                <mat-form-field style="width: 100%;" appearance="outline">
+                                    <mat-label>Name</mat-label>
+
+                                  <input type="text" [formControl]="RequiredValidationName" [errorStateMatcher]="matcher" value="company.Name" matInput placeholder="Full name" name="Name"  [(ngModel)]="company.Name">
+                                  <mat-error *ngIf="RequiredValidationName.hasError('required')">
+                                    Name Is Required
+                                  </mat-error>
+                                </mat-form-field><br>
+
+                                <mat-form-field style="width: 100%;" appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                  <input  type="email" [formControl]="RequiredValidationEmail" [errorStateMatcher]="matcher" matInput value="company.Email"  placeholder="Email" name="Email"  name="Email" [(ngModel)]="company.Email" >
+                                  <mat-error *ngIf="RequiredValidationEmail.hasError('required')">
+                                    Email Is Required
+                                  </mat-error>
+                                  <mat-error *ngIf="RequiredValidationEmail.hasError('email') && !RequiredValidationEmail.hasError('required')">
+                                    Please Enter a Valid Email
+                                  </mat-error>
+                                  </mat-form-field><br>
+
+                                <mat-form-field style="width: 100%;" appearance="outline">
+                                    <mat-label>Address</mat-label>
+                                  <input type="text" [formControl]="RequiredValidationAddress"  [errorStateMatcher]="matcher" matInput value="company.Address" placeholder="Address" name="Address"  [(ngModel)]="company.Address">
+                                  <mat-error *ngIf="RequiredValidationAddress.hasError('required')">
+                                    Address No Is Required
+                                  </mat-error>
+                                </mat-form-field><br>
+                                <mat-form-field style="width: 100%;" appearance="outline">
+                                    <mat-label>Total Employee</mat-label>
+                                  <input type="number" [formControl]="RequiredValidationTotalEmployee"  [errorStateMatcher]="matcher" matInput value="company.TotalEmployee" placeholder="TotalEmployee" name="TotalEmployee"  [(ngModel)]="company.TotalEmployee">
+                                  <mat-error *ngIf="RequiredValidationTotalEmployee.hasError('required')">
+                                    No of employees No Is Required
+                                  </mat-error>
+                                </mat-form-field><br>
+                                <mat-form-field style="width: 100%;" appearance="outline">
+                                    <mat-label>Is Active</mat-label>
+
+                                    <select matNativeControl  [formControl]="RequiredValidationStatus" class="form-control" value="company.IsCompanyActive" [(ngModel)]="company.IsCompanyActive" name="IsCompanyActive" >
+                                        <option  value="true">Yes</option>
+                                        <option  value="false">no</option>
+
+                                    </select>
+                                    <mat-error *ngIf="RequiredValidationStatus.hasError('required')">
+                                        Status Is Required
+                                  </mat-error>
+                                </mat-form-field>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#branch-modal" style="margin-bottom: 15px;">Add Branch</button>
+
+                                <ul>
+                                    <li *ngFor="let branch of branches">{{branch.BranchName}} <a (click)="deleteBranch(branch.BranchId)"><i class="fas fa-trash" style="color: red; cursor: pointer;" ></i></a></li>
+                                  </ul>
+
+                              <p *ngIf="isError" style="color: red;">{{errorMessage}}</p>
+
+                                <button mat-raised-button class="btn btn-primary" [disabled]="companyForm.invalid">Edit</button>
+
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+          <div class="container-fluid">
+              <div class="d-flex align-items-center justify-content-between small">
+                  <div class="text-muted">Copyright &copy; Company Management 2021</div>
+
+              </div>
+          </div>
+      </footer>
+    </div>
+  </div>
+  <div class="modal fade" id="branch-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4>Add Branch</h4>
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+
+          <div class="modal-body" >
+            <p id="addBranchBody" style="color: red;"></p>
+            <form  [formGroup]="branchForm" (ngSubmit)="AddBranch()">
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Branch Name</mat-label>
+                  <input matInput [formControl]="RequiredValidationBranchName" [errorStateMatcher]="matcher"  type="text" name="BranchName"  [(ngModel)]="branch.BranchName" placeholder="Enter Branch Name">
+                  <mat-error *ngIf="RequiredValidationBranchName.hasError('required')">
+                    Branch Name is Required
+                  </mat-error>
+                </mat-form-field>
+
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Address</mat-label>
+                  <input matInput [formControl]="RequiredValidationBranchAddress" [errorStateMatcher]="matcher"  type="text" name="Address"  [(ngModel)]="branch.Address" placeholder="Enter Address">
+                  <mat-error *ngIf="RequiredValidationBranchAddress.hasError('required')">
+                    Branch Address is Required
+                  </mat-error>
+
+                </mat-form-field>
+
+
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" [disabled]="branchForm.invalid">Add Branch</button>
+                <button class="btn btn-default" mat-raised-button  id="closebutton" style="margin-left: 5px;" id="modal-close"  data-dismiss="modal">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>

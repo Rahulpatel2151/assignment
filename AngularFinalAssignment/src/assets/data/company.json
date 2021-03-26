@@ -1,0 +1,77 @@
+[
+{
+  "Id":1,
+  "Email":"tatamotors@gmail.com",
+  "Name":"Tata Motors",
+  "TotalEmployee":120000,
+   "Address":"12, xyz,qwer-12345",
+   "IsCompanyActive":true,
+   "TotalBranch":4,
+   "CompanyBranch":[{
+     "BranchId":"1",
+     "BranchName":"asdf",
+     "Address":"12, xyz,qwer-12345"},
+     {
+      "BranchId":"2",
+      "BranchName":"asdqw",
+      "Address":"12, xyz,qwer-12345"},
+      {
+        "BranchId":"3",
+        "BranchName":"asdfw",
+        "Address":"12, xyz,qwer-12345"},
+        {
+          "BranchId":"4",
+          "BranchName":"asdfge",
+          "Address":"12, xyz,qwer-12345"}]
+},
+{
+  "Id":2,
+  "Email":"mahindra@gmail.com",
+  "Name":"Mahindra",
+  "TotalEmployee":100000,
+   "Address":"123, xyzw,qwere-12345",
+   "IsCompanyActive":true,
+   "TotalBranch":1,
+   "CompanyBranch":[{
+     "BranchId":"5",
+     "BranchName":"asdfeg",
+     "Address":"12, xyz,qwer-12345"}
+    ]
+},
+{
+  "Id":3,
+  "Email":"Renault@gmail.com",
+  "Name":"Renault",
+  "TotalEmployee":150000,
+   "Address":"1234, xyzw,qwere-12345",
+   "IsCompanyActive":true,
+   "TotalBranch":2,
+   "CompanyBranch":[{
+     "BranchId":"6",
+     "BranchName":"asdf",
+     "Address":"12, abc,qa-12345"},
+     {
+      "BranchId":"7",
+      "BranchName":"asdfe",
+      "Address":"12, xyz,qwer-12345"}
+    ]
+},
+{
+  "Id":4,
+  "Email":"marutisuzuki@gmail.com",
+  "Name":"Maruti Suzuki",
+  "TotalEmployee":160000,
+   "Address":"1234, xyzw,qwere-12345",
+   "IsCompanyActive":true,
+   "TotalBranch":2,
+   "CompanyBranch":[{
+     "BranchId":"8",
+     "BranchName":"asdfq",
+     "Address":"12, abc,qa-12345"},
+     {
+      "BranchId":"9",
+      "BranchName":"asdfey",
+      "Address":"12, xyz,qwer-12345"}
+    ]
+}
+]

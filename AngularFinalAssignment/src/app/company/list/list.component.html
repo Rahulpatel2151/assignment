@@ -1,0 +1,92 @@
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Company Management</a>
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+    <!-- Navbar Search-->
+
+
+  </nav>
+<div id="layoutSidenav">
+  <div id="layoutSidenav_nav">
+      <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div class="sb-sidenav-menu">
+              <div class="nav">
+                  <a class="nav-link" [routerLink]="['/company/list']">
+                      <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                      All Companies
+                  </a>
+                  <a class="nav-link" [routerLink]="['/company/add']">
+                    <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
+                    Add Company
+                </a>
+
+              </div>
+          </div>
+
+      </nav>
+  </div>
+  <div id="layoutSidenav_content">
+      <main>
+          <div class="container-fluid">
+              <h1 class="mt-4">Dashboard</h1>
+
+
+              <div class="card mb-4">
+                  <div class="card-header">
+                      <i class="fas fa-table mr-1"></i>
+                      Company List
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                  <tr>
+                                      <th>Name</th>
+                                      <th>Email</th>
+                                      <th>Total Employees</th>
+                                      <th>Active</th>
+                                      <th>Total Branch</th>
+                                      <th>View Details</th>
+                                      <th>Edit Details</th>
+
+                                  </tr>
+                              </thead>
+                              <tfoot>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Total Employees</th>
+                                    <th>Active</th>
+                                    <th>Total Branch</th>
+                                    <th>View Details</th>
+                                    <th>Edit Details</th>
+
+                                  </tr>
+                              </tfoot>
+                            <tbody>
+                              <tr *ngFor="let company of companies">
+                                <td>{{company.Name}}</td>
+                                <td>{{company.Email}}</td>
+                                <td>{{company.TotalEmployee}}</td>
+                                <td>{{company.IsCompanyActive}}</td>
+                                <td>{{company.TotalBranch}}</td>
+                                <td><a [routerLink]="['/company/view',company.Id]" class="btn btn-primary">View Details</a></td>
+                                <td><a [routerLink]="['/company/edit',company.Id]" class="btn btn-primary">Edit Details</a></td>
+
+                            </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Company Management 2021</div>
+
+            </div>
+        </div>
+    </footer>
+  </div>
+</div>
