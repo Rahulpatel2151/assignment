@@ -28,3 +28,33 @@ D:\WebAPI\WebAPIFinalAssignment\HMS.BAL\bin\Debug\EntityFramework.xml
 D:\WebAPI\WebAPIFinalAssignment\HMS.BAL\obj\Debug\HMS.BAL.csproj.CopyComplete
 D:\WebAPI\WebAPIFinalAssignment\HMS.BAL\bin\Debug\AutoMapper.dll
 D:\WebAPI\WebAPIFinalAssignment\HMS.BAL\bin\Debug\AutoMapper.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.BAL.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.BAL.pdb
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.DAL.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.Models.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Web.Http.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Unity.Abstractions.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Unity.Container.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Unity.WebApi.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\EntityFramework.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\AutoMapper.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.DAL.pdb
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.DAL.dll.config
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\HMS.Models.pdb
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\System.Web.Http.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Unity.Abstractions.pdb
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\Unity.Container.pdb
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\EntityFramework.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\bin\Debug\AutoMapper.xml
+D:\assignment\WebAPI Final Assignment\HMS.BAL\obj\Debug\HMS.BAL.csprojAssemblyReference.cache
+D:\assignment\WebAPI Final Assignment\HMS.BAL\obj\Debug\HMS.BAL.csproj.CoreCompileInputs.cache
+D:\assignment\WebAPI Final Assignment\HMS.BAL\obj\Debug\HMS.BAL.csproj.CopyComplete
+D:\assignment\WebAPI Final Assignment\HMS.BAL\obj\Debug\HMS.BAL.dll
+D:\assignment\WebAPI Final Assignment\HMS.BAL\obj\Debug\HMS.BAL.pdb

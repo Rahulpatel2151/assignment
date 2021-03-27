@@ -14,3 +14,19 @@ D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.Models.dll
 D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\HMS.Models.pdb
 D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\AutoMapper.dll
 D:\WebAPI\WebAPIFinalAssignment\HMS.DAL\bin\Debug\AutoMapper.xml
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\HMS.DAL.dll.config
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\HMS.DAL.dll
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\HMS.DAL.pdb
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\AutoMapper.dll
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\EntityFramework.dll
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\HMS.Models.dll
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\HMS.Models.pdb
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\AutoMapper.xml
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\EntityFramework.xml
+D:\assignment\WebAPI Final Assignment\HMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\assignment\WebAPI Final Assignment\HMS.DAL\obj\Debug\HMS.DAL.csprojAssemblyReference.cache
+D:\assignment\WebAPI Final Assignment\HMS.DAL\obj\Debug\HMS.DAL.csproj.CoreCompileInputs.cache
+D:\assignment\WebAPI Final Assignment\HMS.DAL\obj\Debug\HMS.DAL.csproj.CopyComplete
+D:\assignment\WebAPI Final Assignment\HMS.DAL\obj\Debug\HMS.DAL.dll
+D:\assignment\WebAPI Final Assignment\HMS.DAL\obj\Debug\HMS.DAL.pdb
