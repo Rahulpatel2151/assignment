@@ -1,0 +1,9 @@
+<p>form works!</p>
+<form [formGroup]="userForm"   (ngSubmit)="OnSubmit()" >
+    <input type="text" [formControl]="RequiredValidationName"  name="Name" id="Name" [(ngModel)]="user.Name">
+    <p *ngIf="RequiredValidationName.hasError('required')" style="color: red;">Name is Required</p>
+    <input type="email" [formControl]="RequiredValidationEmail"  name="Email" id="Email" [(ngModel)]="user.Email">
+    <p *ngIf="RequiredValidationEmail.hasError('required')" style="color: red;">Email is Required</p>
+
+    <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>
