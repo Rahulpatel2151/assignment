@@ -232,7 +232,7 @@ namespace HMS.DAL
             }
             if (pincode != null)
             {
-                rooms = rooms.Where(x => x.Hotels.PinCode.Equals(pincode, StringComparison.CurrentCultureIgnoreCase));
+                rooms = rooms.Where(x => x.Hotels.PinCode.Equals(pincode));
             }
             if (category != null)
             {
@@ -256,22 +256,29 @@ namespace HMS.DAL
             }
             else
             {
-                hotels.HotelName = hotelsModel.HotelName;
-                hotels.Address = hotelsModel.Address;
-                hotels.City = hotelsModel.City;
-                hotels.PinCode = hotelsModel.PinCode;
-                hotels.ContactNumber = hotelsModel.ContactNumber;
-                hotels.ContactPerson = hotelsModel.ContactPerson;
-                hotels.Website = hotelsModel.Website;
-                hotels.Facebook = hotelsModel.Facebook;
-                hotels.Twitter = hotelsModel.Twitter;
-                hotels.IsActive = hotelsModel.IsActive;
-                hotels.UpdatedBy = hotelsModel.UpdatedBy;
-                hotels.UpdatedDate = hotelsModel.UpdatedDate;
-                db.Entry(hotels).State = EntityState.Modified;
-                db.SaveChanges();
-                return "Hotel Details Modified";
+                try
+                {
+                    hotels.HotelName = hotelsModel.HotelName;
+                    hotels.Address = hotelsModel.Address;
+                    hotels.City = hotelsModel.City;
+                    hotels.PinCode = hotelsModel.PinCode;
+                    hotels.ContactNumber = hotelsModel.ContactNumber;
+                    hotels.ContactPerson = hotelsModel.ContactPerson;
+                    hotels.Website = hotelsModel.Website;
+                    hotels.Facebook = hotelsModel.Facebook;
+                    hotels.Twitter = hotelsModel.Twitter;
+                    hotels.IsActive = hotelsModel.IsActive;
+                    hotels.UpdatedBy = hotelsModel.UpdatedBy;
+                    hotels.UpdatedDate = hotelsModel.UpdatedDate;
 
+                    db.Entry(hotels).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return "Hotel Details Modified";
+                }
+                catch
+                {
+                    return "Details not modified";
+                }
             }
 
         }
@@ -284,17 +291,23 @@ namespace HMS.DAL
             }
             else
             {
-                rooms.RoomName = roomsModel.RoomName;
-                rooms.HotelId = roomsModel.HotelId;
-                rooms.Category = roomsModel.Category;
-                rooms.Price = roomsModel.Price;
-                rooms.IsActive = roomsModel.IsActive;
-                rooms.UpdatedBy = roomsModel.UpdatedBy;
-                rooms.UpdatedDate = roomsModel.UpdatedDate;
-                db.Entry(rooms).State = EntityState.Modified;
-                db.SaveChanges();
-                return "Room Details Modified";
-
+                try
+                {
+                    rooms.RoomName = roomsModel.RoomName;
+                    rooms.HotelId = roomsModel.HotelId;
+                    rooms.Category = roomsModel.Category;
+                    rooms.Price = roomsModel.Price;
+                    rooms.IsActive = roomsModel.IsActive;
+                    rooms.UpdatedBy = roomsModel.UpdatedBy;
+                    rooms.UpdatedDate = roomsModel.UpdatedDate;
+                    db.Entry(rooms).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return "Room Details Modified";
+                }
+                catch
+                {
+                    return "Details not modified";
+                }
             }
 
         }
