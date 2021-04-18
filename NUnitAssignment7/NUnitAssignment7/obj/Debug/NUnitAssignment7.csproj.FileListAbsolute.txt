@@ -1,0 +1,6 @@
+D:\NUnit\NUnitAssignment7\bin\Debug\NUnitAssignment7.dll
+D:\NUnit\NUnitAssignment7\bin\Debug\NUnitAssignment7.pdb
+D:\NUnit\NUnitAssignment7\obj\Debug\NUnitAssignment7.csproj.CoreCompileInputs.cache
+D:\NUnit\NUnitAssignment7\obj\Debug\NUnitAssignment7.dll
+D:\NUnit\NUnitAssignment7\obj\Debug\NUnitAssignment7.pdb
+D:\NUnit\NUnitAssignment7\obj\Debug\NUnitAssignment7.csprojAssemblyReference.cache
