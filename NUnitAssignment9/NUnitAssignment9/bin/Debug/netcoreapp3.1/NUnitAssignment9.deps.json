@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NUnitAssignment9/1.0.0": {
+        "runtime": {
+          "NUnitAssignment9.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnitAssignment9/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

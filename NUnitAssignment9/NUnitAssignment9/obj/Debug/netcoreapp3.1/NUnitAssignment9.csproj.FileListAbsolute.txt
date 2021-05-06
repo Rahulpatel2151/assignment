@@ -1,0 +1,18 @@
+D:\NUnit\NUnitAssignment9\bin\Debug\netcoreapp3.1\NUnitAssignment9.deps.json
+D:\NUnit\NUnitAssignment9\bin\Debug\netcoreapp3.1\NUnitAssignment9.dll
+D:\NUnit\NUnitAssignment9\bin\Debug\netcoreapp3.1\NUnitAssignment9.pdb
+D:\NUnit\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.csprojAssemblyReference.cache
+D:\NUnit\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.AssemblyInfoInputs.cache
+D:\NUnit\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.AssemblyInfo.cs
+D:\NUnit\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.csproj.CoreCompileInputs.cache
+D:\NUnit\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.dll
+D:\NUnit\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.pdb
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\bin\Debug\netcoreapp3.1\NUnitAssignment9.deps.json
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\bin\Debug\netcoreapp3.1\NUnitAssignment9.dll
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\bin\Debug\netcoreapp3.1\NUnitAssignment9.pdb
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.csprojAssemblyReference.cache
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.AssemblyInfoInputs.cache
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.AssemblyInfo.cs
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.csproj.CoreCompileInputs.cache
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.dll
+D:\Gateway Assignments\NUnitAssignment9\NUnitAssignment9\obj\Debug\netcoreapp3.1\NUnitAssignment9.pdb
