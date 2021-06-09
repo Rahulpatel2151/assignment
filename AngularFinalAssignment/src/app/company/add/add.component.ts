@@ -20,13 +20,15 @@ export class AddComponent implements OnInit {
     Validators.required
   ]);
   RequiredValidationEmail= new FormControl('',[
-    Validators.required
+    Validators.required,
+    Validators.email
   ]);
   RequiredValidationAddress= new FormControl('',[
     Validators.required,
   ]);
   RequiredValidationTotalEmployee= new FormControl('',[
     Validators.required,
+    Validators.min(0)
   ]);
   RequiredValidationStatus= new FormControl('',[
     Validators.required,
