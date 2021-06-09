@@ -47,7 +47,7 @@
                                       <th>Total Branch</th>
                                       <th>View Details</th>
                                       <th>Edit Details</th>
-
+                                      <th>Delete Details</th>
                                   </tr>
                               </thead>
                               <tfoot>
@@ -59,7 +59,7 @@
                                     <th>Total Branch</th>
                                     <th>View Details</th>
                                     <th>Edit Details</th>
-
+                                    <th>Delete Details</th>
                                   </tr>
                               </tfoot>
                             <tbody>
@@ -69,8 +69,9 @@
                                 <td>{{company.TotalEmployee}}</td>
                                 <td>{{company.IsCompanyActive}}</td>
                                 <td>{{company.TotalBranch}}</td>
-                                <td><a [routerLink]="['/company/view',company.Id]" class="btn btn-primary">View Details</a></td>
-                                <td><a [routerLink]="['/company/edit',company.Id]" class="btn btn-primary">Edit Details</a></td>
+                                <td><a [routerLink]="['/company/view',company.Id]" class="btn btn-primary">View</a></td>
+                                <td><a [routerLink]="['/company/edit',company.Id]" class="btn btn-primary">Edit</a></td>
+                                <td><a class="btn btn-primary" (click)="delete(company.Id)">Delete</a></td>
 
                             </tr>
                             </tbody>

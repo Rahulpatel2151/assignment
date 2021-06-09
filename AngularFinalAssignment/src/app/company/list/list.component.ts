@@ -27,6 +27,11 @@ export class ListComponent implements OnInit {
     });
 
   }
+  public delete(id:number){
+    let index=this.companies.findIndex(x=>x.Id==id);
+      this.companies.splice(index,1);
+      this.companyService.BroadcastCompany(this.companies);
+  }
   public loadScript(url: string) {
     const body = <HTMLDivElement> document.body;
     const script = document.createElement('script');
